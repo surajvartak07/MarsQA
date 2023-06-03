@@ -19,3 +19,16 @@ Scenario: 3 User delets newly added language
 	Given User is logged into MarsQA application 
 	When User delets newly added language
 	Then Language is deleted successfully
+
+Scenario: 4 User should be able to add maximum four languages 
+	Given User is logged into MarsQA application
+	When User adds four languages 
+	When User tries to add fifth language
+	Then Add New Language button is not visible so user is not allowed to add 
+
+Scenario: 5 User adds Skill to the profile
+	Given User is logged into MarsQA application 
+	When User adds multiple new skills 
+	Then Newly added skills are displayed in the skills list on user profile 
+
+Scenario: 6 User edits newly 
