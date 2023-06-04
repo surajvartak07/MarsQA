@@ -76,11 +76,11 @@ Note: to add step definitions for newly added features, click on go to definitio
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("1 User adds Languages to the profile")]
-        public virtual void _1UserAddsLanguagesToTheProfile()
+        [NUnit.Framework.DescriptionAttribute("01 User adds Languages to the profile")]
+        public virtual void _01UserAddsLanguagesToTheProfile()
         {
             string[] tagsOfScenario = ((string[])(null));
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("1 User adds Languages to the profile", null, ((string[])(null)));
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("01 User adds Languages to the profile", null, ((string[])(null)));
 #line 7
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -115,11 +115,11 @@ this.ScenarioInitialize(scenarioInfo);
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("2 User edits newly added language")]
-        public virtual void _2UserEditsNewlyAddedLanguage()
+        [NUnit.Framework.DescriptionAttribute("02 User edits newly added language")]
+        public virtual void _02UserEditsNewlyAddedLanguage()
         {
             string[] tagsOfScenario = ((string[])(null));
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("2 User edits newly added language", null, ((string[])(null)));
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("02 User edits newly added language", null, ((string[])(null)));
 #line 13
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -154,11 +154,11 @@ this.ScenarioInitialize(scenarioInfo);
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("3 User delets newly added language")]
-        public virtual void _3UserDeletsNewlyAddedLanguage()
+        [NUnit.Framework.DescriptionAttribute("03 User delets newly added language")]
+        public virtual void _03UserDeletsNewlyAddedLanguage()
         {
             string[] tagsOfScenario = ((string[])(null));
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("3 User delets newly added language", null, ((string[])(null)));
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("03 User delets newly added language", null, ((string[])(null)));
 #line 18
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -193,11 +193,11 @@ this.ScenarioInitialize(scenarioInfo);
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("4 User should be able to add maximum four languages")]
-        public virtual void _4UserShouldBeAbleToAddMaximumFourLanguages()
+        [NUnit.Framework.DescriptionAttribute("04 User should be able to add maximum four languages")]
+        public virtual void _04UserShouldBeAbleToAddMaximumFourLanguages()
         {
             string[] tagsOfScenario = ((string[])(null));
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("4 User should be able to add maximum four languages", null, ((string[])(null)));
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("04 User should be able to add maximum four languages", null, ((string[])(null)));
 #line 23
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -225,80 +225,8 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.When("User adds four languages", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 26
- testRunner.When("User tries to add fifth language", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.Then("Add new Language button is not visible so user is not able to add fifth language", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
-#line 27
- testRunner.Then("Add New Language button is not visible so user is not allowed to add", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-            }
-            this.ScenarioCleanup();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("5 User adds Skill to the profile")]
-        public virtual void _5UserAddsSkillToTheProfile()
-        {
-            string[] tagsOfScenario = ((string[])(null));
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("5 User adds Skill to the profile", null, ((string[])(null)));
-#line 29
-this.ScenarioInitialize(scenarioInfo);
-#line hidden
-            bool isScenarioIgnored = default(bool);
-            bool isFeatureIgnored = default(bool);
-            if ((tagsOfScenario != null))
-            {
-                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((this._featureTags != null))
-            {
-                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((isScenarioIgnored || isFeatureIgnored))
-            {
-                testRunner.SkipScenario();
-            }
-            else
-            {
-                this.ScenarioStart();
-#line 30
- testRunner.Given("User is logged into MarsQA application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line hidden
-#line 31
- testRunner.When("User adds multiple new skills", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
-#line 32
- testRunner.Then("Newly added skills are displayed in the skills list on user profile", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-            }
-            this.ScenarioCleanup();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("6 User edits newly")]
-        public virtual void _6UserEditsNewly()
-        {
-            string[] tagsOfScenario = ((string[])(null));
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("6 User edits newly", null, ((string[])(null)));
-#line 34
-this.ScenarioInitialize(scenarioInfo);
-#line hidden
-            bool isScenarioIgnored = default(bool);
-            bool isFeatureIgnored = default(bool);
-            if ((tagsOfScenario != null))
-            {
-                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((this._featureTags != null))
-            {
-                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((isScenarioIgnored || isFeatureIgnored))
-            {
-                testRunner.SkipScenario();
-            }
-            else
-            {
-                this.ScenarioStart();
             }
             this.ScenarioCleanup();
         }
